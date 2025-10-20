@@ -27,7 +27,7 @@ pnpm install
 If you need to rebuild the Tailwind CSS:
 
 ```bash
-pnpm tailwindcss -i static/css/input.css -o static/css/styles.css --watch
+npx tailwindcss -i static/css/input.css -o static/css/styles.css --watch
 ```
 
 ### 4. Run the Development Server
