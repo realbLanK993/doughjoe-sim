@@ -9,11 +9,16 @@
 </head>
 
 <body class="min-h-screen min-w-screen flex justify-center items-center">
+    
     <main class="max-w-[1200px] flex flex-col gap-4 justify-end w-full h-screen overflow-hidden p-4">
+        <form action="" id="room_code_form">
+        <input name="code" placeholder="Room Code" class="border-2 border-black/60 rounded p-1 px-2 w-fit" type="number" />
+        <button class="p-1 border-2 border-black/60 rounded" type="submit">Submit</button>
+    </form>
         <div id="messages" class="flex flex-1 flex-col h-full w-full bg-red-300 overflow-y-auto">
             
         </div>
-        <form  class="flex gap-2 justify-center items-center w-full">
+        <form id="chat" action="" class="flex gap-2 justify-center items-center w-full">
             <input class="border-2 border-black/60 rounded p-2 w-full" id="text" placeholder="Send text here...." type="text">
             <button id="send" type="submit" class="p-2 border-2 rounded border-black/60">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
