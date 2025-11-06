@@ -6,6 +6,7 @@ class User(SQLModel):
     gamer_tag: int
     cookie: str = Field(index=True)
     room_id: int | None = Field(default=None, foreign_key="room.id")
+    moderator: bool = Field(default=False)
 
 
 class Room(SQLModel):
